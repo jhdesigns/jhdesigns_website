@@ -1,4 +1,4 @@
-# jhdesigns_website
+# jhdesigns website
 Jo Hayduk Designs website
 
 made with jekyll
