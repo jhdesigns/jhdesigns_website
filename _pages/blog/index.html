@@ -1,15 +1,33 @@
 ---
 layout: default
-title: blog
+title: Jo Hayduk Designs-Blog
 permalink: "/blog/"
 ---
 
+<p>
+Welcome to my blog on sewing, style, sustainability and escaping to the garden
+<br>
+<br>
+</p>
 
-
-<ul>
   {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {{ post.excerpt }}
+    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+    <hr/>
+    <div id="blog_thumb">
+    <p> {% if post.thumbnail %}
+        <img src="{{ post.thumbnail }}"  />
+        {% else %}
+        <img src="/images/nothumb.jpg" />
+        {% endif %}</p>
+    </div>
+        <p>&nbsp;</p>
+    <div id="blog_sample_text">
+    <p>{{ post.content | strip_html | truncatewords:50  }} </p>
+        <p>
+	<a  href="{{ post.url }}">Read more...</a>
+	</p>
+    </div>
+     <hr/>
   {% endfor %}
-</ul>
+
 
