@@ -2,3 +2,5 @@ name: Jo Hayduk Designs
 markdown: kramdown
 include: ['_pages']
 
+google_analytics: UA-88835753-1
+

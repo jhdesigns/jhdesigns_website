@@ -6,5 +6,11 @@
                 <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
 		<meta name="keywords" content="Oxfordshire, sewing, design, dressmaking, alterations, wedding, upcycling" >
                 <meta name="description" content="Dressmaking and clothing design in the heart of North Oxfordshire">
+
+                {% if jekyll.environment == 'production' %}
+                   {% include analytics.html %}
+                {% endif %}   
+
+
 	</head>
         <body
