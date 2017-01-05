@@ -25,7 +25,9 @@ Welcome to my blog on sewing, style, sustainability and escaping to the garden
     <p>{{ post.content | strip_html | truncatewords:50  }} </p>
         <p>
 	<a  href="{{ post.url }}">Read more...</a>
-	</p>
+	</p><br>
+	<p>{{ post.date | date: '%B %d, %Y' }}</p>
+
     </div>
      <hr/>
   {% endfor %}
